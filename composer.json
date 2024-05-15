@@ -1,0 +1,38 @@
+{
+    "name": "tv2regionerne/statamic-unpublish-cron",
+    "autoload": {
+        "psr-4": {
+            "Tv2regionerne\\StatamicUnpublishCron\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tv2regionerne\\StatamicUnpublishCron\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0",
+        "laravel/prompts": "^0.1.21"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Unpublish Cron",
+            "description": "Statamic Unpublish Cron addon"
+        },
+        "laravel": {
+            "providers": [
+                "Tv2regionerne\\StatamicUnpublishCron\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
